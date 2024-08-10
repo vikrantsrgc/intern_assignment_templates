@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="style2.css"> -->
+     <style>
+        * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    height: 100vh;
+    width: 100%;
+    font-family: Arial, sans-serif; /* Add a default font family */
+    background-color: rgb(1, 10, 7);
+  }
+  .bg-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .template2-card {
+    background-color: #A600AC99;
+    background-size: cover;
+    background-position: center;
+    width: 560px;
+    height: 600px;
+    position: relative;
+  }
+  .template2-card .days{
+    color: #ffffff;
+    font-weight: bold;
+    font-size:18px ;
+    text-align: end;
+    margin-right: 70px;
+    rotate: 9deg;
+    margin-top: 5px;
+  }
+  .template2-card .flash{
+    background-color: yellow;
+    width: 80%;
+    font-size: 50px;
+    color: #B907C0;
+    rotate: 9deg;
+    margin-left: 50px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    font-weight: bolder;
+   text-align: center;
+
+  }
+  .template2-card .flash2{
+    background-color: yellow;
+    width: 80%;
+    font-weight: bolder;
+    font-size: 110px;
+    color: #B907C0;
+    rotate: -1deg;
+    margin-left: 50px;
+    margin-top: 15px;
+   text-align: center;
+
+  }
+
+  /* star code  */
+  .four-pointed-star{
+    position:relative;
+    margin:1em auto;
+    width:1em;
+    font-size:8em;
+    rotate: 44deg;
+    margin-right: 25px;
+    
+  }
+  
+  .four-pointed-star:before{
+    content:"";
+    position:absolute;
+    background:yellow;
+    width:1em;
+    height:1.15em;
+    transform:rotate(-45deg) skewX(22.5deg) skewY(22.5deg);
+  }
+  
+  .four-pointed-star:after{
+    content:"";
+    position:absolute;
+    background:yellow;
+    width:1em;
+    height:1.15em;
+    transform:rotate(45deg) skewX(22.5deg) skewY(22.5deg);
+  }
+  .template2-card .image{
+    position: absolute;
+    height: 250px;
+    width: 180px;
+    top: 58.3%;
+    left: 68%;
+    object-fit: cover;
+     
+  }
+   .offer2 span{
+    font-size: 80px;
+    font-weight: bolder;
+    color: white;
+   }
+  .offer2{
+    position: absolute;
+    /* background-color: wheat; */
+    top: 57%;
+    left: 10%;
+  }
+
+  .template2-card .website{
+    position: absolute;
+    top: 90%;
+    left: 10%;
+    background-color: yellow;
+    color: #B907C0;
+    width: 260px;
+    text-align: center;
+  }
+
+  /* small star  */
+
+  .four-pointed-star2{
+    position:relative;
+    margin:1em auto;
+    width:1em;
+    font-size:1.5em;
+    /* rotate: 44deg; */
+    margin-right: 25px;
+    
+  }
+  
+  .four-pointed-star2:before{
+    content:"";
+    position:absolute;
+    background:#f5f5f3;
+    width:1em;
+    height:1.15em;
+    transform:rotate(-45deg) skewX(22.5deg) skewY(22.5deg);
+  }
+  
+  .four-pointed-star2:after{
+    content:"";
+    position:absolute;
+    background:#f5f5f3;
+    width:1em;
+    height:1.15em;
+    transform:rotate(45deg) skewX(22.5deg) skewY(22.5deg);
+  }
+  /* 3  */
+  .four-pointed-star3{
+    position:relative;
+    margin:1em auto;
+    width:1em;
+    font-size:1.5em;
+    rotate: 44deg;
+    margin-right: 25px;
+    
+  }
+  
+  .four-pointed-star3:before{
+    content:"";
+    position:absolute;
+    background:#fefefe;
+    width:1em;
+    height:1.15em;
+    transform:rotate(-45deg) skewX(22.5deg) skewY(22.5deg);
+  }
+  
+  .four-pointed-star3:after{
+    content:"";
+    position:absolute;
+    background:#fefefd;
+    width:1em;
+    height:1.15em;
+    transform:rotate(45deg) skewX(22.5deg) skewY(22.5deg);
+  }
+
+  .template2-card .small-star{
+    position: absolute;
+    top: 40%;
+    left: 5%;
+    display: flex;
+    rotate: -11deg;
+    gap: 460px;
+    right: 0.5%;
+  }
+     </style>
+</head>
+<body>
+<div class="bg-container">
+    <div class="template2-card">
+        <div class="days">
+            <h2>3 Days Only</h2>
+        </div>
+        <div class="flash">
+            <h1>FLASH</h1>
+        </div>
+        <div>
+            <h1 class="flash2">SALE</h1>
+        </div>
+        <div class="four-pointed-star"></div>
+        <img class="image" src="https://s3-alpha-sig.figma.com/img/8861/525b/eae8a337adcd846f61f332dce9932c3f?Expires=1724025600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=nJYxRS-qh~Og0ja6QjuhT5u8~1DdqLhR-5XOdWXiU~7ZaKZOUCkXYO4LgAayxhiXYnWM2HnMduN3G~-s7u-mKJ9BgSBCaUhDiq4cRShbqdEnTygr7QxWoa-~t8PsMQODggwto-5hmdG6e4E0IhGnD1FB8CLh2zC9uLiy4waAYIUOk4wja0VpiWFcxVBr3UwdRg-rQ4Ghe---HGiwzIj9ZtXZwATQRTgLH9BDrdKb6L3SvzntWAieqWuQlkxh5o0vwep0paWIk4RxoIyZ65ocotPdldtOHpxINBWilrsfRKeuJls-apvaAN~W~eajT4Fq5BnGGwHnnra57z2x~DlSQw__" alt="">
+        <div class="offer2">
+            <span>45%</span>
+            <br>
+            <span>OFF</span>
+        </div>
+        <div class="website">
+            <h2>Samplewebsite.com</h2>
+        </div>
+        <div class="small-star"> 
+            <div class="four-pointed-star2"></div>
+            <div class="four-pointed-star3"></div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

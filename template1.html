@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+     <style>
+        /* Global Styles */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    height: 100vh;
+    width: 100%;
+    font-family: Arial, sans-serif; /* Add a default font family */
+    background-color: black;
+  }
+  
+  /* Container Styles */
+  
+  .bg-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  /* Card Styles */
+  
+  .flat-card {
+    background-image: url("https://s3-alpha-sig.figma.com/img/aade/d9b8/31675510854668dfbe8dfa854e9098b8?Expires=1724025600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=VsrqlETQpLjZIXWQFn7-q6WlJMu5AZx9aHZ8tyzGFef34oTSaBKBzk-x44tRkrA6o2UvTI0yozgLKqSgA2unqjNbxPvpTgQmBHrDt6Y37Myyjf02c5HtfCURLmSd7Q6Q6vdk8Oa-Bq~A1KgDB2qGBX1fLNjswhN1OQ~oE4X~-3WeUDmuFbCDNG4Gn39pXagSlAC~uYkxfceEnoQLxSInzD11CC-xchF-kkfnfdATqxAh4X4ZQERMeoJhWnnzLN3Nyv8gSs1WQUHbOZ~IcnFD7kFQZgIhrIQ7qqmbjLls6pActFxNJpEYuVyJ9SMd4rKmNFSTQ~UksX0c7csqlXh~yw__");
+    background-size: cover;
+    background-position: center;
+    width: 560px;
+    height: 550px;
+    position: relative;
+  }
+  
+  /* Web Styles */
+  
+  .web {
+    background-color: #cab5b5;
+    width: 45%;
+    margin-left: 20%;
+    margin-top: 3%;
+    text-align: center;
+  }
+  
+  .web2 {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 240px;
+    
+  }
+  .web2 .p1{
+    margin-left: -70px;
+  }
+   
+  .web2 h2 {
+    transform: rotate(180deg);
+    rotate: 90deg;
+    margin-top: 40%;
+    background-color: #cab5b5;
+  }
+  
+  .webend {
+    position: absolute;
+    top: 93%;
+    left: 30%;
+    background-color: #cab5b5;
+  }
+  
+  /* Flash Styles */
+  
+  .offer-container{
+    /* background-color: white; */
+    text-align: center;
+    width: 150px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.offer{
+    background-color: black;
+    color: white;
+    border-radius: 100%;
+    align-items: center;
+    font-size: 20px;
+    padding:30px;
+} 
+.offer-heading{
+    color: black;
+    background-color: white;
+    border-radius: 50px;
+    letter-spacing: 7px;
+    margin: 10px;
+}
+     </style>
+</head>
+<body>
+    <div class="bg-container">
+        <div class="flat-card">
+            <div class="web">
+                <h2>Samplewebsite.com</h2>
+            </div>
+        
+        <div class="web2">
+            <h2 class="p1">Samplewebsite.com</h2>
+            <h2>Samplewebsite.com</h2>
+        </div>
+        <div class="webend">
+            <h2 >Samplewebsite.com</h2>
+        </div>
+        
+        <div class="offer-container">
+            <h2 class="offer-heading">FLASH</h2>
+            <div class="offer">
+                <span>90%</span>
+                <br>
+                <span>Off</span>
+            </div>
+            <h2 class="offer-heading" >SALE</h2>
+        </div>
+        </div>
+        
+    </div>
+ 
+</body>
+</html>
